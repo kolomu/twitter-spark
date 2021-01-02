@@ -1,5 +1,5 @@
 object DemoApp extends App {
-  println("Starting...")
-  val twitterProducer = TwitterProducer()
+  println("Starting the producer")
+  val twitterProducer = TweetProducer()
   twitterProducer.run()
 }

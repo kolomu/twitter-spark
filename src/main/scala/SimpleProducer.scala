@@ -6,7 +6,7 @@ import org.apache.kafka.clients.producer._
 object SimpleProducer extends App {
   val  props = new Properties()
   props.put("bootstrap.servers", "localhost:9092")
-  props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer")
+    props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
   props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer")
 
   val producer = new KafkaProducer[String, String](props)
