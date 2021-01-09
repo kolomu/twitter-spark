@@ -7,8 +7,8 @@ scalaVersion := "2.12.12"
 resolvers += Resolver.sonatypeRepo("releases")
 
 libraryDependencies += "com.danielasfregola" %% "twitter4s" % "7.0"
-libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3"
 libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2"
+libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3"
 
 libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.8.0"
 libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.8.0" classifier "models"

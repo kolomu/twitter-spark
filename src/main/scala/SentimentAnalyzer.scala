@@ -11,7 +11,7 @@ object SentimentAnalyzer {
   props.put("annotators", "tokenize,ssplit,pos,parse,sentiment")
   val pipeline = new StanfordCoreNLP(props)
 
-  def getSentiment(text: String): Unit = {
+  def getSentiment(text: String): Double = {
     val document = new Annotation(text)
     pipeline.annotate(document)
     val sentences = document.get(classOf[CoreAnnotations.SentencesAnnotation])

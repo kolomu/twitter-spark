@@ -1,8 +1,8 @@
 object DemoApp extends App {
   println("Starting the producer")
-  val value = SentimentAnalyzer.getSentiment("I was me")
-  println(value);
+  // val value = SentimentAnalyzer.getSentiment("I was me")
+  // println(value);
 
-  // val twitterProducer = TweetProducer()
-  // twitterProducer.run()
+  val twitterProducer = TweetProducer()
+  twitterProducer.run()
 }
